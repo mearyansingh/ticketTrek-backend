@@ -28,7 +28,7 @@ app.use('/api/users', userRouter)
 app.use('/api/tickets', ticketRouter)
 
 app.get('/', (req, res) => {
-	res.json({ message: 'Welcome to the TicketTrek api' })
+	res.send({ message: 'Welcome to the TicketTrek api' })
 })
 
 // app.use(errorHandler)
