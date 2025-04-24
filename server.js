@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 8000
 
 //middleware
 app.use(cors({
-	origin: ['http://localhost:5173'], //send the cookie in the response
+	origin: ['http://localhost:5173', 'https://tickettrek-help.vercel.app'], //send the cookie in the response
 	credentials: true // enable cookies
 }))
 
@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 	res.send({ message: 'Welcome to the TicketTrek api' })
 })
 
-// app.use(errorHandler)
+app.use(errorHandler)
 
 app.listen(PORT, () => console.log(`Server started on  port ${PORT}`.green.bold))
 
