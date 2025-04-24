@@ -27,6 +27,14 @@ app.use(express.urlencoded({ extended: false }))
 app.use('/api/users', userRouter)
 app.use('/api/tickets', ticketRouter)
 
+app.get('/', (req, res) => {
+	res.json({ message: 'Welcome to the TicketTrek api' })
+})
+
+// app.use(errorHandler)
+
+app.listen(PORT, () => console.log(`Server started on  port ${PORT}`.green.bold))
+
 //Serve Frontend
 // if (process.env.NODE_ENV === "production") {
 // 	//set build folder as static
@@ -45,10 +53,6 @@ app.use('/api/tickets', ticketRouter)
 // 	})
 // }
 
-app.get('/', (req, res) => {
-	res.json({ message: 'Welcome to the TicketTrek api' })
-})
-
-// app.use(errorHandler)
-
-app.listen(PORT, () => console.log(`Server started on  port ${PORT}`.green.bold))
+// "devDependencies": {
+//     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+//   }
