@@ -5,7 +5,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch Server.js"
+    "start": "node server.js",
+    "server": "node --watch server.js"
   },
   "author": "Aryan Singh",
   "license": "MIT",

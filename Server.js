@@ -8,7 +8,7 @@ import ticketRouter from './Routes/TicketRoutes.js'
 import { errorHandler } from './Middleware/ErrorMiddleware.js'
 import { connectDB } from './Config/Db.js'
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 8000
 
 //Connect to database
 connectDB()
