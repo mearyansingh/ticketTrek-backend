@@ -49,6 +49,6 @@ app.get('/', (req, res) => {
 	res.json({ message: 'Welcome to the TicketTrek api' })
 })
 
-app.use(errorHandler)
+// app.use(errorHandler)
 
 app.listen(PORT, () => console.log(`Server started on  port ${PORT}`.green.bold))
