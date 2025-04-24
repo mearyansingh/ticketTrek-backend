@@ -1,19 +1,18 @@
 import 'dotenv/config'
 import colors from 'colors'
-import express from 'express'
 import cors from 'cors'
+import express from 'express'
 // import path from 'path'
 import userRouter from './Routes/UserRoutes.js'
 import ticketRouter from './Routes/TicketRoutes.js'
 import { errorHandler } from './Middleware/ErrorMiddleware.js'
 import { connectDB } from './Config/Db.js'
 
-const PORT = process.env.PORT || 8000
-
 //Connect to database
 connectDB()
-
+//initialize express app
 const app = express()
+const PORT = process.env.PORT || 8000
 
 //middleware
 app.use(cors({
