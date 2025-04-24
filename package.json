@@ -1,0 +1,25 @@
+{
+  "name": "ticket-trek",
+  "version": "1.0.0",
+  "description": "TicketTrek: Navigate Solutions, Raise Tickets",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch Server.js"
+  },
+  "author": "Aryan Singh",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
+}
